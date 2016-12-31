@@ -10,7 +10,12 @@ ggplot(data=data.frame(x=1,y=1),aes(x,y))+
   ###corner arc:
   geom_path(data=data.frame(x=c(0:1000/1000),y=c(35-sqrt(1^2-c(0:1000/1000)^2))),aes(x=x,y=y))+
   geom_path(data=data.frame(x=c(0:1000/1000)+67,y=c(35-sqrt(1^2-c(-1000:0/1000)^2))),aes(x=x,y=y))+
-   ###6-yard box:
+  ###corner lines:
+  geom_path(data=data.frame(x=c(0,-0.5),y=c(26.85, 26.85)))+
+  geom_path(data=data.frame(x=c(68,68.5),y=c(26.85, 26.85)))+
+  geom_path(data=data.frame(x=c(9,9),y=c(35, 35.5)))+
+  geom_path(data=data.frame(x=c(59,59),y=c(35, 35.5)))+
+  ###6-yard box:
   geom_path(data=data.frame(x=c(24.85,24.85,43.15,43.15),y=c(35,29.5,29.5,35)))+
   ###goal
   geom_path(data=data.frame(x=c(30.35,30.35,37.67,37.67),y=c(35,36,36,35)))+
