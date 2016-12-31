@@ -12,6 +12,9 @@ geom_point(aes(x = 34, y = 0), size = 1) +
 geom_point(aes(x = 34, y = 41.5), size = 1) +
 ###penalty arc:
 geom_path(data=data.frame(x=c(-7280:(-1)/1000,1:7280/1000)+34,y=c(41.5-sqrt(9.15^2-c(-7280:(-1)/1000,1:7280/1000)^2))),aes(x=x,y=y))+
+###corner arc:
+geom_path(data=data.frame(x=c(0:1000/1000),y=c(52.5-sqrt(1^2-c(0:1000/1000)^2))),aes(x=x,y=y))+
+geom_path(data=data.frame(x=c(0:1000/1000)+67,y=c(52.5-sqrt(1^2-c(-1000:0/1000)^2))),aes(x=x,y=y))+
 ###6-yard box:
 geom_path(data=data.frame(x=c(24.85,24.85,43.15,43.15),y=c(52.5,47,47,52.5)))+
 ###goal
