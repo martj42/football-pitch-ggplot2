@@ -7,9 +7,9 @@ geom_path(data=data.frame(x=c(0,0,68,68,0),y=c(0,52.5,52.5,0,0)))+
 ###centre circle:
 geom_path(data=data.frame(x=c(-9150:(-1)/1000,1:9150/1000)+34,y=c(sqrt(9.15^2-c(-9150:(-1)/1000,1:9150/1000)^2))),aes(x=x,y=y))+
 ##centre spot:
-geom_point(aes(x = 34, y = 0), size = 0.5) +
+geom_point(aes(x = 34, y = 0), size = 1) +
 ##penalty spot:
-geom_point(aes(x = 34, y = 41.5), size = 0.5) +
+geom_point(aes(x = 34, y = 41.5), size = 1) +
 ###penalty arc:
 geom_path(data=data.frame(x=c(-7280:(-1)/1000,1:7280/1000)+34,y=c(41.5-sqrt(9.15^2-c(-7280:(-1)/1000,1:7280/1000)^2))),aes(x=x,y=y))+
 ###6-yard box:
