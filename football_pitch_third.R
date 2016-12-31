@@ -4,7 +4,7 @@ ggplot(data=data.frame(x=1,y=1),aes(x,y))+
 ###pitch:
 geom_path(data=data.frame(x=c(0,0,68,68,0),y=c(0,35,35,0,0)))+
 ##penalty spot:
-geom_point(aes(x = 34, y = 23.5), size = 0.5) +
+geom_point(aes(x = 34, y = 23.5), size = 1) +
 ###penalty arc:
 geom_path(data=data.frame(x=c(-7280:(-1)/1000,1:7280/1000)+34,y=-c(sqrt(9.15^2-c(-7280:(-1)/1000,1:7280/1000)^2))+24),aes(x=x,y=y))+
 ###6-yard box:
