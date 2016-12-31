@@ -16,8 +16,8 @@ ggplot(data=data.frame(x=1,y=1),aes(x,y))+
   geom_path(data=data.frame(x=c(0:1000/1000),y=c(52.5-sqrt(1^2-c(0:1000/1000)^2))),aes(x=x,y=y))+
   geom_path(data=data.frame(x=c(0:1000/1000)+67,y=c(52.5-sqrt(1^2-c(-1000:0/1000)^2))),aes(x=x,y=y))+
   ###corner lines:
-  geom_path(data=data.frame(x=c(0,-0.5),y=c(42.35,42.35)))+
-  geom_path(data=data.frame(x=c(68,68.5),y=c(42.35,42.35)))+
+  geom_path(data=data.frame(x=c(0,-0.5),y=c(43.35,43.35)))+
+  geom_path(data=data.frame(x=c(68,68.5),y=c(43.35,43.35)))+
   geom_path(data=data.frame(x=c(9,9),y=c(52.5,53)))+
   geom_path(data=data.frame(x=c(58.85,58.85),y=c(52.5,53)))+
   ###6-yard box:
