@@ -3,9 +3,17 @@ library('ggthemes')
 
 ggplot(data=data.frame(x=1,y=1),aes(x,y))+
   ###grass:
-  geom_rect(aes(xmin = -3, xmax = 71, ymin = -3, ymax = 30),
+  geom_rect(aes(xmin = -3, xmax = 71, ymin = -3, ymax = 55.5),
             fill = "darkolivegreen4", alpha = 0.7) +
-  geom_rect(aes(xmin = -3, xmax = 71, ymin = 30, ymax = 55.5),
+  geom_rect(aes(xmin = 0, xmax = 68, ymin = 0, ymax = 6),
+            fill = "darkolivegreen4", alpha = 0.7) +
+  geom_rect(aes(xmin = 0, xmax = 68, ymin = 12, ymax = 18),
+            fill = "darkolivegreen4", alpha = 0.7) +
+  geom_rect(aes(xmin = 0, xmax = 68, ymin = 24, ymax = 30),
+            fill = "darkolivegreen4", alpha = 0.7) +
+  geom_rect(aes(xmin = 0, xmax = 68, ymin = 36, ymax = 41.5),
+            fill = "darkolivegreen4", alpha = 0.7) +
+  geom_rect(aes(xmin = 0, xmax = 68, ymin = 47, ymax = 52.5),
             fill = "darkolivegreen4", alpha = 0.7) +
   ###pitch:
   geom_path(data=data.frame(x=c(0,0,68,68,0),y=c(0,52.5,52.5,0,0)), colour = "white")+
@@ -21,8 +29,8 @@ ggplot(data=data.frame(x=1,y=1),aes(x,y))+
   geom_path(data=data.frame(x=c(0:1000/1000),y=c(52.5-sqrt(1^2-c(0:1000/1000)^2))),aes(x=x,y=y), colour = "white")+
   geom_path(data=data.frame(x=c(0:1000/1000)+67,y=c(52.5-sqrt(1^2-c(-1000:0/1000)^2))),aes(x=x,y=y), colour = "white")+
   ###corner lines:
-  geom_path(data=data.frame(x=c(0,-0.5),y=c(42.35,42.35)), colour = "white")+
-  geom_path(data=data.frame(x=c(68,68.5),y=c(42.35,42.35)), colour = "white")+
+  geom_path(data=data.frame(x=c(0,-0.5),y=c(43.35,43.35)), colour = "white")+
+  geom_path(data=data.frame(x=c(68,68.5),y=c(43.35,43.35)), colour = "white")+
   geom_path(data=data.frame(x=c(9,9),y=c(52.5,53)), colour = "white")+
   geom_path(data=data.frame(x=c(58.85,58.85),y=c(52.5,53)), colour = "white")+
   ###6-yard box:
